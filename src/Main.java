@@ -47,7 +47,8 @@ public class Main {
     }
 
     public static void task4() {
-        ArrayList<String> Word = new ArrayList<>(Arrays.asList("горела ", "горела ", "изба ", "пылыхала ", "изба "));
-        // Тут я запутался и уже не могу разобрать, что к чему
-        }
+        ArrayList<String> word = new ArrayList<>(Arrays.asList("горела ", "горела ", "изба ", "пылыхала ", "изба "));
+        Set<String> rts = new HashSet<>(word);
+        System.out.println(word.size() - rts.size());
+    }
 }
